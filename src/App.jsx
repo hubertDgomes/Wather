@@ -37,18 +37,18 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-screen">
+      <div className="flex flex-col justify-center items-center min-h-screen py-10">
         <div className="flex">
           <Images src={logo} />
           <h1 className="text-[40px] md:text-[69px] font-Nunito">WeatherMe</h1>
         </div>
-        <div className="text-center">
+        <div className="text-center"> 
           <form onSubmit={handleBtn}>
             <input
               onChange={(e) => setCity(e.target.value)}
               type="text"
               placeholder="Search location..."
-              className="bg-[#D9D9D9] h-[66px] w-[400px] md:w-[711px] px-[40px] py-[12px] rounded-2xl placeholder:font-Nunito placeholder:font-light placeholder:text-[30px] placeholder:text-[#524E4E] text-[30px] font-Nunito text-[#524E4E]"
+              className="bg-[#D9D9D9] h-[66px] w-[4 00px] md:w-[711px] px-[40px] py-[12px] rounded-2xl placeholder:font-Nunito placeholder:font-light placeholder:text-[30px] placeholder:text-[#524E4E] text-[30px] font-Nunito text-[#524E4E]"
             />
             <br />
             <button className="mt-[20px] p-3 bg-white text-black font-Nunito rounded-2xl font-bold text-[20px]">
@@ -66,12 +66,12 @@ function App() {
 
         {/* show part */}
         {datas && datas.name && (
-          <div className="md:w-[817px] py-[50px] px-[30px] bg-gradient-to-br from-[#AD36CB] via-[#a561b5] to-[#333333] rounded-3xl p-6 shadow-2xl m-[30px]">
+          <div className="lg:w-[917px] py-[50px] px-[30px] bg-gradient-to-br from-[#AD36CB] via-[#a561b5] to-[#333333] rounded-3xl p-6 shadow-2xl m-[30px]">
             <div className="flex items-center gap-5">
               <h1 className="font-Nunito text-[30px]">{datas.name}</h1>
               <FaLocationDot className="text-[30px]" />
             </div>
-            <div className="flex items-center justify-center h-screen max-h-[200px]">
+            <div className="flex items-center justify-center min-h-[200px]">
               <BsThermometerHigh className="text-[70px]" />
               <h2 className="text-[70px]">
                 {Math.round(datas.main.temp)}
@@ -83,7 +83,7 @@ function App() {
                 {new Date().toDateString()}
               </p>
             </div>
-            <div className="flex flex-wrap flex-col md:flex-row justify-between font-Nunito font-medium text-[20px] mt-[30px] text-center gap-y-[30px]">
+            <div className="flex flex-wrap flex-col md:flex-row justify-between font-Nunito font-medium text-[20px] mt-[30px] text-center gap-y-[30px] gap-x-[40px]">
               <div className="">
                 <p>Humidity</p>
                 <p>{`${datas.main.humidity}%`}</p>
