@@ -48,7 +48,7 @@ function App() {
               onChange={(e) => setCity(e.target.value)}
               type="text"
               placeholder="Search location..."
-              className="bg-[#D9D9D9] h-[66px] w-[00px] md:w-[711px] px-[40px] py-[12px] rounded-2xl placeholder:font-Nunito placeholder:font-light placeholder:text-[30px] placeholder:text-[#524E4E] text-[30px] font-Nunito text-[#524E4E]"
+              className="bg-[#D9D9D9] h-[66px] w-[400px] md:w-[711px] px-[40px] py-[12px] rounded-2xl placeholder:font-Nunito placeholder:font-light placeholder:text-[30px] placeholder:text-[#524E4E] text-[30px] font-Nunito text-[#524E4E]"
             />
             <br />
             <button className="mt-[20px] p-3 bg-white text-black font-Nunito rounded-2xl font-bold text-[20px]">
