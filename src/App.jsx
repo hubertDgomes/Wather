@@ -25,7 +25,7 @@ function App() {
     )
       .then((res) => res.json())
       .then((data) => {
-        if (data.cod === "404") {
+        if (data.cod !== 200 || !data.name) {
           setError("Enter the valid City or Country,");
           setDatas(null);
         } else {
